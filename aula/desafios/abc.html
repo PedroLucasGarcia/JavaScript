@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - ABC</title>
+</head>
+<body>
+    
+    <script>
+        var a = 10
+        var b = 20
+        var c = null //variável auxiliar
+
+        document.write('A: ' + a + '<br />')
+        document.write('B: ' + b + '<br />')
+        document.write('C: ' + c + '<br />')
+
+        document.write('<hr />')
+
+        //lógica de inversão dos valores das variáveis A e B
+        c = a //variável C armazena temporariamente o valor de A
+        a = b //variável A armazena valor de B
+        b = c //variável B armazena valor de C
+        c = null //remove o valor de C
+
+        document.write('A: ' + a + '<br />')
+        document.write('B: ' + b + '<br />')
+        document.write('C: ' + c + '<br />')
+
+    </script>
+</body>
+</html>
