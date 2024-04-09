@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador ternário</title>
+</head>
+<body>
+    
+    <script>
+        var nota = prompt('Digite sua nota:')
+        var faltas = prompt('Digite quantas faltas possui:')
+
+        var media = 7
+        var faltasMaxima = 20
+
+        //Operador ternário
+        var resultado = (nota >= media && faltas <= faltasMaxima) ? 'Aprovado' : 'Reprovado'
+
+        document.write(resultado)
+    </script>
+</body>
+</html>
