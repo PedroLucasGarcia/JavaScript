@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If e Else / Operadores Lógicos</title>
+</head>
+<body>
+    
+    <script>
+        //Operadores lógicos
+        /*
+            E (&&)      - verdadeiro se todas as expressões forem verdadeiras
+            OU (||)     - verdadeiro se pelo menos uma das expressões for verdadeira
+            Negação (!) - inverte o resultado da expressão de comparação
+        */
+
+        // && - true && true = true
+        if(2 == 2 && 3 >= 1){
+            document.write('Verdadeiro')
+        }
+        else{
+            document.write('Falso')
+        }
+
+        // || - true || false = true
+        if(2 == 2 || 3 >= 5){
+            document.write('Verdadeiro')
+        }
+        else{
+            document.write('Falso')
+        }
+
+        // ! - true = false
+        if(!(2 == 2)){
+            document.write('Verdadeiro')
+        }
+        else{
+            document.write('Falso')
+        }
+
+        document.write('<hr/>')
+
+        //Exemplo
+        var nota = prompt('Digite sua nota:')
+        var faltas = prompt('Digite quantas faltas possui:')
+
+        var media = 7
+        var faltasMaxima = 20
+
+        //se a nota for maior que a média e as faltas forem menor ou igal a quantidade de faltas máxima
+        if (nota >= media && faltas <= faltasMaxima){
+            document.write('Aprovado!')
+        }
+        //se não
+        else{
+            document.write('Reprovado!')
+        }
+    </script>
+</body>
+</html>
