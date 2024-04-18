@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<body>
+    <script>
+        //Declarando uma função
+        /*function calcularArea(largura, comprimento) {
+            var area = largura * comprimento
+            return area
+        }
+
+        var largura = prompt('Digite a largura em metros: ')
+        var comprimento = prompt('Digite o comprimento em metros: ')        
+        var area = calcularArea(largura, comprimento)
+
+        document.write('A área é de: ' + area + ' metros quadrados!')*/
+
+
+        //Flexibilidade de parâmetros
+        function soma(a, b) {
+            return a + b
+        }
+        document.write(soma(7, 4)) 
+        document.write(soma(7, 4, 3, 2)) //Quando tem mais parâmetros, ele desconsidera os parâmetros adicionais
+        document.write(soma(7)) //Quando tem menos parâmetros, o valor que falta recebe undefined e retorna not a number
+        document.write(soma()) //Quando não tem parâmetros, o valor recebe undefined e retorna not a number
+    </script>
+</body>
+</html>
