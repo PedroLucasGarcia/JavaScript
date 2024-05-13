@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções nativas para manipular Strings</title>
+</head>
+<body>
+    <script>
+        var nome = ' Pedro Lucas Garcia '
+
+        //propriedade(atributo) length - retorna a quantidade de caracteres de uma string
+        document.write(nome.length)
+        document.write('<br />')
+
+        //método charAt() - retorna o valor encontrado dentro do index encaminhado
+        document.write(nome.charAt(6))
+        document.write('<br />')
+
+        //método indexOf() - retorna a posição da primeira ocorrência de um valor específico dentro da string
+        document.write(nome.indexOf('a'))
+        document.write('<br />')
+
+        //método replace() - permite substituir o texto dentro da string. Para utilizar, encaminhamos o texto que queremos modificar(valor de pesquisa) e o texto modificado(valor de modificação)
+        document.write(nome.replace('Garcia', 'da Silva Garcia'))
+        document.write('<br />')
+
+        //método substr() - permite extrair parte de uma string com base em uma posição inicial, seguida de um valor que representa a quantidade de caracteres a frente daquela posição incial(como se recortasse uma parte da string )
+        document.write(nome.substr(6, 5))
+        document.write('<br />')
+
+        //método toLowerCase() - converte todos os caracteres da string para minúsculo
+        document.write(nome.toLowerCase())
+        document.write('<br />')
+
+        //método toUpperCase() - converte todos os caracteres da string para maiúsculo
+        document.write(nome.toUpperCase())
+        document.write('<br />')
+
+        //método trim() - remove todos os espaçamentos em branco das extremidades da string
+        document.write('-' + nome.trim() + '-')
+        
+
+    </script>
+</body>
+</html>
