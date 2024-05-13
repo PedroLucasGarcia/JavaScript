@@ -6,40 +6,25 @@
     <title>Variáveis</title>
 </head>
 <body>
-    <h1>Variáveis</h1>
-
     <script>
-        //string
-        var texto = 'Curso de JavaScrit' //= - atribuição / '' ou "" - encapsula o conjunto de caracteres
+        //3 Escopos: global, função e bloco
+        //As variáveis função e bloco tem acesso a variáveis globais
+        //Variaveis declaradas dentro do bloco sofrem elevação, mas as variáveis de função não
 
-        //number
-        var numeroInteiro = -7 //int
-        var numerofracionado = 15.96 //float
+        //global
+        var serie = 'Friends'
 
-        //boolean
-        var teste = true //verdadeiro
-        var teste2 = false //falso
+        //função
+        function x() {
+            document.write(serie)
+        }
 
-        //null - representa a ausência intencional de um valor
-        var teste3 = null
+        x()
 
-        //underfined - indica que a variável apesar de declarada, de fato não possui nenhum valor
-        var teste4 = undefined
-        var teste5 //se não colocarmos nenhuma atribuição, altomaticamente será underfined
-
-        alert(numeroInteiro) //abri um dialog (geralmente é utilizado para debug)
-        
-        console.log(numerofracionado) //imprime mensagens de registro no console do navegador, é frequentemente usado para depuração.
-
-        document.write(texto) //escreve o texto diretamente no documento HTML
-
-
-        //alterando o valor de uma variável
-        console.log(teste4)
-        
-        texte4 = 'Valor modificada com sucesso!'
-
-        console.log(teste4)
+        //bloco
+        if (true) {
+            document.write(serie)        
+        }
 
     </script>
 </body>
