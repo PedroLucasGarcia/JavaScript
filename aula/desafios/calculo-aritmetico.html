@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicação para efetuar cálculo aritméticos de soma e subtração</title>
+</head>
+<body>
+    <script>
+        var num1 = prompt('digite o primeiro número')
+        var operacao = prompt('digite qual operador: soma ou subtração')
+        var num2 = prompt('digite o segundo número')
+
+        function calc (num1, num2, operacao){
+            num1 = parseFloat(num1)
+            num2 = parseFloat(num2)
+            
+            var resultado = 0
+
+            if(operacao == 'soma'){
+            resultado = (num1 + num2)
+            }
+            else if(operacao == 'subtracao' || 'subtração'){
+                resultado = (num1 - num2)
+            }
+            else{
+                document.write('Operação não válida!')
+            }
+
+            return resultado;
+        }
+
+        document.write('O resultado é: ' + calc(num1, num2, operacao));
+    </script>
+</body>
+</html>
