@@ -66,22 +66,23 @@
         document.write('<hr/>')
         document.write(data2.getTime())
 
+        //encontrando a qtd de milissegundos entre data1 e data2
         var ms_entre_datas = Math.abs(data1.getTime() - data2.getTime())
 
         document.write('<hr/><br/><br/>')
 
-        document.write(ms_entre_datas)
+        document.write('A quantidade de milissegundos entre as datas é de: ' + ms_entre_datas + ' milissegundos')
 
         document.write('<br/><br/><br/>')
 
         //convertendo milissegundos em dias
         var ms_por_dia = 1*24*60*60*1000
 
-        document.write('1 dia tem: ' + ms_entre_datas + ' milissegundos')
+        document.write('1 dia tem: ' + ms_por_dia + ' milissegundos')
 
         document.write('<br/><br/><br/>')
 
-        document.write('A diferença entre a data1 e a data2 é de: ' + Math.ceil(ms_entre_datas / ms_por_dia) + ' dia(s)')
+        document.write('A diferença entre a data1 e a data2 é de: ' + Math.round(ms_entre_datas / ms_por_dia) + ' dia(s)')
 
 
 
