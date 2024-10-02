@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do mouse</title>
+</head>
+<body>
+    <div onclick="eventoOnClick()" ondblclick="eventoOndblClick()" onmouseup="eventoOnMouseUp()" onmouseover="eventoOnMouseOver()" onmouseout="eventoOnMouseOut()" style="background-color: gray; width: 250px; height: 250px;"></div>
+
+    <script>
+        function eventoOnClick(){
+            alert('Elemento foi clicado')
+        }
+        function eventoOndblClick(){
+            alert('Elemento foi clicado duas vezes sequências')
+        }
+        function eventoOnMouseUp(){
+            alert('Elemento foi clicado e liberado')
+        }
+        function eventoOnMouseOver(){
+            alert('O Mouse está sobre o Elemento')
+        } 
+        function eventoOnMouseOut(){
+            alert('O Mouse está fora do Elemento')
+        }  
+    </script>
+</body>
+</html>
