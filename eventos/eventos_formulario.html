@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de formulário</title>
+</head>
+<body>
+    <input onfocus="console.log('Elemento recebeu o foco')" onblur="console.log('Elemento perdeu o foco')" type="text">
+    <select onchange="console.log('O estado foi modificado')">
+        <option>-- Selecione --</option>
+        <option value="1">-- Primeira opção --</option>
+        <option value="2">-- Segunda opção --</option>
+    </select>
+</body>
+</html>
