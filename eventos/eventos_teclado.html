@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do teclado</title>
+</head>
+<body>
+    <input onkeydown="onKeyDown()" type="text">
+    <input onkeypress="onKeyPress()" type="text">
+    <input onkeyup="onKeyUp()" type="text">
+
+    <script>
+        function onKeyDown(){ //Acontece assim que a tecla é apertada
+            alert('Tecla apertada')
+        }
+        function onKeyPress(){ //Acontece assim que a tecla é precionada (só funciona com teclas de caracteres)
+            alert('Tecla precionada')
+        }
+        function onKeyUp(){ //Acontece após a tecla ser apertada
+            alert('Tecla solta')
+        }
+    </script>
+</body>
+</html>
