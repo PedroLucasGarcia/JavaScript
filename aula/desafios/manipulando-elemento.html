@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando elementos</title>
+</head>
+<body>
+    <!-- Crie um campo <input type="text"> e aplique os seguintes controles com base nos eventos abaixo:
+            • No evento de foco modifique o background do input para amarelo. *
+            • Quando o campo perder o foco, recupere o seu respectivo valor e: 
+                Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo deve ter seu background 
+                alterado para vermelho.
+                Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background deve ser alterado 
+                para verde.
+    -->
+
+    <input type="text" onfocus="elementoFoco('#ffff00')"  onblur="elementoSemFoco()" id="elementoInput">
+
+    <script>
+        function elementoFoco(corDeFundoComFoco){
+            document.getElementById('elementoInput').style.background = corDeFundoComFoco
+        }
+        function elementoSemFoco(corDeFundoSemFoco){
+            var conteudo = document.getElementById('elementoInput').value
+
+            if(conteudo.length < 3){
+                document.getElementById('elementoInput').style.background = "red"
+            }
+            else{
+                document.getElementById('elementoInput').style.background = "green"
+            }
+   
+        }
+    </script>
+</body>
+</html>
