@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM - Timing</title>
+</head>
+<body>
+    <script>
+        //Estrutura - setTimeout(<ação>, <tempo em milissegundos>);
+        //Finalização - clearTimeout()
+        setTimeout(function() {document.write('Teste', '<br/>')}, 900)
+        
+        //Estrutura - setInterval(<ação>, <tempo em milissegundos>);
+        //Finalização - clearTimeout()
+        var i = 60
+        var segundos = setInterval(function() {
+            document.write(i, '<br/>'); 
+            i--; 
+
+            if(i === 0){
+                clearInterval(segundos);
+            }
+        }, 1000)
+
+    </script>
+</body>
+</html>

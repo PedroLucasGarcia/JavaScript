@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM - Screen</title>
+</head>
+<body>
+    <script>
+        var altura = window.screen.availHeight  //Retorna a altura máxima disponível, excluinado a barra de ferramentas 
+        var largura = window.screen.availWidth  //Retorna a largura máxima disponível, excluinado a barra de ferramentas 
+
+        var alura2 = window.screen.height   //Retorna a altura máxima disponível, incluindo a barra de ferramentas 
+        var largura2 = window.screen.width  //Retorna a largura máxima disponível, incluindo a barra de ferramentas 
+
+        document.write('A altura do navegador é: ' + altura +  '<br/>')
+        document.write('A largura do navegador é: ' + largura + '<br/> <br/>')
+
+        //Pode ser útil para aplicações que exijão rerponsividade básica. Também, pode ser usado junto com bibliotecas de responsividade 
+
+        if(largura < 500){
+            document.write('Logica para impressão do menu mobile')
+        }else{
+            document.write('Logica para impressão do menu web')
+        }
+
+    </script>
+</body>
+</html>
