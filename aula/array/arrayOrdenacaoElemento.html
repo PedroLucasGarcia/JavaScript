@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Ordenação de elemento</title>
+</head>
+<body>
+    <script>
+        var lista_frutas = Array() 
+
+        lista_frutas[0] = 'Morango'
+        lista_frutas[1] = 'Maçã'
+        lista_frutas[2] = 'Uva'
+        lista_frutas[3] = 'Manga'
+        lista_frutas[4] = 'Banana'
+
+        console.log(lista_frutas.sort())  //Faz uma reordenação alfanumérica com base nos valores dos elementos, ajustando também seus respectivos índices
+    
+        var lista_numeros = Array() 
+
+        lista_frutas[0] = 12
+        lista_frutas[1] = 4
+        lista_frutas[2] = 1
+        lista_frutas[3] = 38
+        lista_frutas[4] = 7
+
+        console.log(lista_frutas.sort(ordenaNumeros)) // Se usássemos apenas o sort ele iria reoganizar os numeros com base na ordem alfanumérica. De forma que o 12 por exemplo viria antes do 4. Por isso a necessidade de incluir a função ordenaNumeros
+
+        function ordenaNumeros(a, b){
+            return a - b
+            // < 0 = a ordenado antes de b
+            // > 0 = b ordenado antes de a
+            // == 0 = a ordem é mantida
+        }
+    
+    </script>
+</body>
+</html>

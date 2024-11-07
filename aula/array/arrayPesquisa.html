@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Pesquisa de elemento</title>
+</head>
+<body>
+    <script>
+        var lista_frutas = Array() 
+
+        lista_frutas[0] = 'Banana'
+        lista_frutas[1] = 'Uva'
+        lista_frutas[2] = 'Morango'
+        lista_frutas[3] = 'Manga'
+        lista_frutas[4] = 'Maçã'
+
+        var auxiliar = lista_frutas.indexOf('Banana')   //indexOf - Método para fazer pesquisa de um elemento dentro do array (o retorno dele é o índice onde ele está contido, caso ele não encontre nenhum valor será retornado -1)
+        if(auxiliar === -1){
+            console.log('O elemento não existe')
+        } else{
+            console.log('O elemento existe e está na posição ' + auxiliar)
+        }
+
+        console.log(lista_frutas)
+    </script>
+</body>
+</html>
