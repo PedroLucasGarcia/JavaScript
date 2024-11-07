@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While</title>
+</head>
+<body>
+    <script>
+        var x = 1
+
+        document.write('Início' + '<br/>')
+
+        while(x <= 10){ // enquanto x for menor ou igual a 10
+            document.write(x + '<br/>')
+
+            x++ // acrescenta 1 ao valor de x, funciona para que não entre em um loop
+        }
+
+        document.write('Fim' + '<br/>')
+
+
+
+        var y = 1
+        document.write('Início' + '<br/>')
+
+        while(y <= 10){ // enquanto y for menor ou igual a 10
+            document.write(y + '<br/>')
+
+            if( y === 5){   // interrompe o laço de repetição
+                break 
+            }
+
+            y++ // acrescenta 1 ao valor de y, funciona para que não entre em um loop
+        }
+
+        document.write('Fim' + '<br/>')
+
+
+
+        var z = 1
+        document.write('Início' + '<br/>')
+
+        while(z <= 10){ // enquanto z for menor ou igual a 10
+            z++ // acrescenta 1 ao valor de z, funciona para que não entre em um loop. Deve ser declarada antes do continue.
+
+            if( z === 5){   // interrompe o laço de repetição
+                continue 
+            }
+
+            document.write(z + '<br/>')
+     }
+
+        document.write('Fim')
+    </script>
+</body>
+</html>
