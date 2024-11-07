@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de erros com try(tente), catch(pegar), finaly(finalmente) e throw(lançar) </title>
+</head>
+<body>
+    <script>
+
+
+        var video = Array()
+
+        video[1] = Array()
+        video[1]['nome'] = 'Fullmetal Alchemist'
+        video[1]['categoria'] = 'Anime'
+
+        function getVideo(video){
+            try{
+                //logica
+                //http
+                console.log(video[0]['nome']) //Retornará um erro, pos não existe dentro do array e não completará nenhuma outra instrução que vier depois
+            } catch(erro){
+                tratarErro(erro)
+                console.log('Agora sim podemos tratar esse erro')
+                throw new Error('Houve um erro inesperado, mas não se preocupe, estamos trabalhando nisso agora!') //Força uma interrupção
+            } finally{
+                console.log('Sempre passa por aqui (try / catch)')
+            }
+            
+            console.log('A aplicação não morreu')
+        }
+
+        function tratarErro(e){
+            console.log(e)
+        }
+
+        getVideo(video)
+
+    </script>
+</body>
+</html>
