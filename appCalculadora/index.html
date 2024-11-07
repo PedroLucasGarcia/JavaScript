@@ -97,16 +97,16 @@
       function calcular(tipo, valor){
         if(tipo === 'acao'){
           if(valor === 'c'){
-            document.getElementById('resultado').value = ''
+            document.getElementById('resultado').value = '' //Limpa o visor (id - resultado)
           }
 
           if(valor === '+' || valor === '-' || valor === '*' || valor === '/' || valor === '.'){
-            document.getElementById('resultado').value += valor
+            document.getElementById('resultado').value += valor //Adiciona as ações (strings) ao valor, concatenando.
           }
           
           if(valor === '='){
             var resultadoConta = eval(document.getElementById('resultado').value)
-            document.getElementById('resultado').value = resultadoConta
+            document.getElementById('resultado').value = resultadoConta //Resultado da conta
           }
         }
         else if(tipo === 'valor'){
